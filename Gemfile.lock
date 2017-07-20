@@ -1,12 +1,7 @@
-GIT
-  remote: https://github.com/Alexballer/Viewing_View_tool
-  revision: eaeeb11a141db6ca4215fc5d5989628a91d2fc96
-  specs:
-    Viewing_View_Tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    Viewing_View_Tool (0.1.0)
     actioncable (5.0.4)
       actionpack (= 5.0.4)
       nio4r (>= 1.2, < 3.0)
@@ -195,7 +190,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  Viewing_View_Tool!
+  Viewing_View_Tool (~> 0.1.0)
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
