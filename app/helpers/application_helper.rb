@@ -17,7 +17,6 @@ module ApplicationHelper
   end
   
   def copyright_generator
-    DankestViewTool::Renderer.copyright 'jeremy', 'All rights reserved'
+    ViewingViewTool::Renderer.copyright 'Alex Phillips', 'All rights reserved' 
   end
-
 end

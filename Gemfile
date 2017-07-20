@@ -56,5 +56,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'Viewing_View_Tool', git: 'https://github.com/Alexballer/Viewing_View_tool'
 
 gem 'petergate', '~> 1.7'
