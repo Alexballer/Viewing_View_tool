@@ -19,53 +19,29 @@
     
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <h1 class="blog-title">My Blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'New Blog', new_blog_path  if logged_in?(:site_admin) %>
       </div>
     </div>
     
     <div class="container">
             
      <div class="row">
-       
-       
-       
-       
-       
-       
-       
-       
         
         <%= yield %>
         
-        <div class="col-sm-3 offset-sm-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Nothing! What a surprise...unless there's hidden treasure!</p>
-          </div>
-          <div class="sidebar-module">
-            <h4>Apperent Archives, which aren't here.</h4>
-            <ol class="list-unstyled">
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-            </ol>
-          </div>
-        </div>
+        <%= render 'shared/blog_sidebar' %>
+       </div>
         
         <footer class="blog-footer">
          <p>
           <a href="#">Back to top</a>
          </p>
         </footer>
-        
-        
-        <%= render "shared/nav", location: 'bottom' %>
+
       
         <%= source_helper("blog") %>
-     </div>
     </div>
   </body>
 </html>
